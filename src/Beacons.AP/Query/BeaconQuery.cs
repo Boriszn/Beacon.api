@@ -1,4 +1,4 @@
-﻿using Beacons.AP.Data;
+﻿using Beacons.AP.Model;
 using MediatR;
 
 namespace Beacons.AP.Query

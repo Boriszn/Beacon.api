@@ -1,4 +1,4 @@
-﻿namespace Beacons.AP.Data
+﻿namespace Beacons.AP.Model
 {
     public class BeaconViewModel
     {
