@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Beacons.AP.Data;
+using Beacons.AP.Model;
 using Beacons.AP.Query;
 using Beacons.AP.Services;
 using MediatR;

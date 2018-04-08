@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Beacons.AP.Data;
+using Beacons.AP.Model;
 
 namespace Beacons.AP.Services
 {

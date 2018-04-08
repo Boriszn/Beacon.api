@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Beacons.AP.Data;
+using Beacons.AP.Model;
 using Beacons.AP.Query;
 using MediatR;
 
@@ -17,7 +17,6 @@ namespace Beacons.AP.Handler
         /// <returns></returns>
         public async Task<BeaconViewModel> Handle(BeaconQuery message)
         {
-            // Could query a db here and get the columns we need.
 
             var viewModel = new BeaconViewModel
             {

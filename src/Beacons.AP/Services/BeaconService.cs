@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Beacons.AP.Data;
+using Beacons.AP.Model;
 using Beacons.AP.Query;
 using MediatR;
 
