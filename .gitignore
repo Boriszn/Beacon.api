@@ -1,0 +1,5 @@
+.vs/
+src/Beacons.AP/bin/
+src/Beacons.AP/obj/
+tests/Beacon.AP.UnitTests/bin/
+tests/Beacon.AP.UnitTests/obj/
