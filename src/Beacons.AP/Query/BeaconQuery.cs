@@ -1,4 +1,5 @@
-﻿using Beacons.AP.Model;
+﻿using System;
+using Beacons.AP.Model;
 using MediatR;
 
 namespace Beacons.AP.Query
@@ -15,6 +16,6 @@ namespace Beacons.AP.Query
         /// <value>
         /// The identifier.
         /// </value>
-        public int Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Beacons.AP.Model;
 
 namespace Beacons.AP.Services
@@ -13,6 +14,6 @@ namespace Beacons.AP.Services
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
-        Task<BeaconViewModel> GetById(int id);
+        Task<BeaconViewModel> GetById(Guid id);
     }
 }

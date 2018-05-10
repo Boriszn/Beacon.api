@@ -1,5 +1,8 @@
 ﻿using System.Linq;
 using System.Reflection;
+using Beacons.AP.Configuration.Settings;
+using Beacons.AP.Data.BeaconsDb.Infrastructure;
+using Beacons.AP.Data.BeaconsDb.Repositories;
 using Beacons.AP.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -70,6 +73,11 @@ namespace Beacons.AP
             // Assembly sd = typeof(Startup).GetTypeInfo().Assembly;
             // services.AddMediatR();
 
+            services.Configure<MongoConfigurationSettings>(this.Configuration.GetSection("ConnectionStrings:MongoConfigurationSettings"));
+            services.Configure<MongoConfigurationSettings>(this.Configuration.GetSection("ConnectionStrings:MongoConfigurationSettings"));
+
+            services.AddScoped<IBeaconsDbContext, BeaconsDbContext>();
+            services.AddScoped<IBeaconsRepository, BeaconsRepository>();
             services.AddScoped<IBeaconService, BeaconService>();
 
             // Swagger API documentation
