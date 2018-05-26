@@ -2,6 +2,10 @@
 
 Solution demonstrate usage of [CQRS](https://martinfowler.com/bliki/CQRS.html) pattern.(Based on [MediatR](https://github.com/jbogard/MediatR))
 
+#### Architecture
+![alt text](https://raw.githubusercontent.com/Boriszn/Beacon.api/feature/BA-4-add-mongodb-integration/assets/img/architecture-diagramm.png "Logo Title Text 1")
+
+
 ## Installation
 
 1. Clone repository

@@ -1,4 +1,6 @@
-﻿namespace Beacons.AP.Model
+﻿using System;
+
+namespace Beacons.AP.Model
 {
     public class BeaconViewModel
     {
@@ -8,7 +10,7 @@
         /// <value>
         /// The identifier.
         /// </value>
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         /// <summary>
         /// Gets or sets the number.

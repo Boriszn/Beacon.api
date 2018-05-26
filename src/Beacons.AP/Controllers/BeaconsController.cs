@@ -39,7 +39,7 @@ namespace Beacons.AP.Controllers
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
             BeaconViewModel beaconViewModel = await beaconService.GetById(id);
 
