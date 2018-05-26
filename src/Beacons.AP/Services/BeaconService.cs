@@ -28,7 +28,7 @@ namespace Beacons.AP.Services
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
-        public async Task<BeaconViewModel> GetById(int id)
+        public async Task<BeaconViewModel> GetById(Guid id)
         {
             BeaconViewModel beaconViewModel = await mediator.SendAsync(new BeaconQuery { Id = id });
 
