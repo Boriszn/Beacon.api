@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Beacons.AP.Data.BeaconsDb.Model;
 using Beacons.AP.Data.BeaconsDb.Repositories;
