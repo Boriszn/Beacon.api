@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Beacons.AP.Model;
 using Beacons.AP.Query;
@@ -23,11 +24,19 @@ namespace Beacons.AP.Services
             this.mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
-        /// <summary>
-        /// Gets the by identifier.
-        /// </summary>
-        /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <inheritdoc />
+        public async Task<List<BeaconViewModel>> GetAll()
+        {
+            var beaconViewModel = await mediator.SendAsync(new AllBeaconsQuery
+            {
+                Page = 1,
+                PageCount = 5
+            });
+
+            return beaconViewModel;
+        }
+
+        /// <inheritdoc />
         public async Task<BeaconViewModel> GetById(Guid id)
         {
             BeaconViewModel beaconViewModel = await mediator.SendAsync(new BeaconQuery { Id = id });

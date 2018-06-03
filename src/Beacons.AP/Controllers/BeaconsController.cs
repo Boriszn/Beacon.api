@@ -1,10 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Beacons.AP.Model;
-using Beacons.AP.Query;
 using Beacons.AP.Services;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Beacons.AP.Controllers
@@ -27,9 +26,9 @@ namespace Beacons.AP.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<List<BeaconViewModel>> Get()
         {
-            return new [] { "value1", "value2" };
+            return await beaconService.GetAll();
         }
 
 
